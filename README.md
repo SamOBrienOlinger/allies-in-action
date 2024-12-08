@@ -1,2 +1,7 @@
 # Know Yellowknife
-"Know Yellowknife" (KYK) is a versatile educational tool, online resource, and digital hub designed to foster connection, belonging, and cultural understanding within Yellowknife. Developed by Allies in Action (AiA), this platform provides a unique new space for all Yelloknifers to enjoy learning about each other and their own communities.
+"Know Yellowknife" (KYK) is a versatile educational tool, online resource, and digital hub designed to foster connection, belonging, and cultural understanding within Yellowknife. Developed by Allies in Action (AiA), this platform provides a unique new space for all Yelloknifers to enjoy learning about each other and their own community, whether they’ve lived here since time in immemorial, for many generations, have recently made the City their home or they are visiting as tourists.
+
+As an all-in-one out of the box resource, KYK provides curated educational content, celebrates community voices, and promotes active participation in civic and cultural initiatives.
+KYK’s mission is to offer residents and visitors alike an inclusive space to explore Yellowknife’s rich history, its vibrant communities, and the stories that unite them. The project is grounded in evidence-based pedagogical principles of Play-Based Learning and Experiential Learning. With a focus on accessibility and user-friendly design, the platform leverages people’s lived experience and  encourages knowledge-sharing to enhance a deeper understanding of, and appreciation for, the city’s unique identity while reinforcing pride and social cohesion.
+
+This project has evolved from a more basic concept delivered for a hackathon. The MVP delivered was [AllyIndex](https://declan444.github.io/24-7-hackathon-team9/index.html)
