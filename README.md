@@ -6,7 +6,6 @@
 
    ![welcome-to-yk](https://github.com/user-attachments/assets/fe47c39b-b5fb-406f-a4ff-2a89181d4f56)
 
-
 As an all-in-one out of the box resource, KYK provides curated educational content, celebrates community voices, and promotes active participation in civic and cultural initiatives.
 
   ![The-city-of-yellowknife-dance-gala-2022](https://github.com/user-attachments/assets/03e30f94-7641-4a7a-bf84-937422f63165)
@@ -17,8 +16,7 @@ KYK’s mission is to offer residents and visitors alike an inclusive space to e
 
   ![rainbow-crosswalk](https://github.com/user-attachments/assets/cd102793-9a64-4179-bfe4-111c5e30863e)
 
-
-# ( ***PLACEHOLDER for all the other CONTENTS*** )
+<!-- # ( ***PLACEHOLDER for all the other CONTENTS*** ) -->
 
 ## Credits
 
@@ -26,5 +24,3 @@ KYK’s mission is to offer residents and visitors alike an inclusive space to e
   ![allies-in-action-team](https://github.com/user-attachments/assets/123dfd14-d2f9-48e6-8ffd-ad6eb5cd590f)
 
 - This project has evolved from a more basic concept delivered for a hackathon. The MVP delivered was [AllyIndex](https://declan444.github.io/24-7-hackathon-team9/index.html)
-
-
