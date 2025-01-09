@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Know Yellowknife - Contact</title>
+    <meta
+      name="description"
+      content="A self-education tool with information about Yellowknife and its inhabitants, it's history and much more"
+    />
+    <meta
+      name="keywords"
+      content="Canada, Yellowknife, indigenous, First Nations, diversity, social inclusion, self-education, empowering communites"
+    />
+    <!-- favicon -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="assets/img/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="assets/img/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="assets/img/favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="assets/img/favicon/site.webmanifest" />
+    <!-- Bootstrap CSS link -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+    <!-- Custom CSS link -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <!-- Bootstrap JS script -->
+    <script
+      src="https://kit.fontawesome.com/4c5b290b58.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
+      integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
+      crossorigin="anonymous"
+      defer
+    ></script>
+    <!-- Custom JS script -->
+    <script src="assets/js/app.js" defer></script>
+    <!-- Email JS -->
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script>
+      (function () {
+        emailjs.init({
+          publicKey: '5rhx797RlUzGrL0aO',
+        });
+      })();
+    </script>
+    <!-- SweetAlert2 CSS link -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.all.min.js"></script>
+  </head>
+
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light background-blue fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">Know Yellowknife</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="learn.html">Learn</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="quiz.html">Quiz</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="contact.html"
+                >Contact</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <main>
+      <!-- Hero section and page title -->
+      <section class="hero">
+        <div
+          class="d-flex flex-column align-items-start justify-content-center bg-black-transparent"
+        >
+          <div class="container p-3">
+            <div class="col-md-6 mb-0">
+              <h1 class="mb-1 mt-1 font-weight-bold">Give us your Feedback</h1>
+              <p class="mb-0">
+                If you have something for us to improve on, please let us know!
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Video Background -->
+      <!-- <div class="video-bg">
+        <video class="welcome-video" autoplay muted loop>
+          <source src="assets/vid/loveislove.mp4" type="video/mp4" />
+          Background video of LGBT+ stickers (Browser does not support video.)
+        </video>
+      </div> -->
+      <!-- Contact Form Section -->
+      <section>
+        <div class="form-wrapper rounded-4">
+          <div>
+            <div class="input-field rounded-4">
+              <h2>Contact Us</h2>
+              <form onsubmit="return sendMail(this);" id="contactForm">
+                <!-- Name input -->
+                <div class="contact-form">
+                  <label for="fullName"
+                    ><i class="fa-solid fa-signature"></i> - Full name</label
+                  >
+                  <input
+                    class="form-control"
+                    id="fullName"
+                    type="text"
+                    placeholder="Enter your name..."
+                    data-sb-validations="required"
+                    required="required"
+                  />
+                  <div
+                    class="invalid-feedback"
+                    data-sb-feedback="name:required"
+                  >
+                    A name is required.
+                  </div>
+                </div>
+                <!-- Email input -->
+                <div class="contact-form">
+                  <label for="email_id"
+                    ><i class="fa-solid fa-envelope"></i> - Email address</label
+                  >
+                  <input
+                    class="form-control"
+                    id="email_id"
+                    type="email"
+                    placeholder="name@example.com"
+                    data-sb-validations="required,email"
+                    required="required"
+                  />
+                  <div
+                    class="invalid-feedback"
+                    data-sb-feedback="email:required"
+                  >
+                    An email is required.
+                  </div>
+                  <div class="invalid-feedback" data-sb-feedback="email:email">
+                    Email is not valid.
+                  </div>
+                </div>
+                <!-- Phone input -->
+                <div class="contact-form">
+                  <label for="phone"
+                    ><i class="fa-solid fa-phone"></i> - Phone number</label
+                  >
+                  <input
+                    class="form-control"
+                    id="phone"
+                    type="tel"
+                    placeholder="(123) 456-7890"
+                    data-sb-validations="required"
+                  />
+                  <div
+                    class="invalid-feedback"
+                    data-sb-feedback="phone:required"
+                  >
+                    A phone number is required.
+                  </div>
+                </div>
+                <!-- Message input -->
+                <div class="contact-form">
+                  <label for="message"
+                    ><i class="fa-solid fa-message"></i> - Message</label
+                  >
+                  <textarea
+                    class="form-control"
+                    id="message"
+                    placeholder="Enter your message here..."
+                    style="height: 10rem"
+                    data-sb-validations="required"
+                    required="required"
+                  ></textarea>
+                  <div
+                    class="invalid-feedback"
+                    data-sb-feedback="message:required"
+                  >
+                    A message is required.
+                  </div>
+                </div>
+                <!-- submit button -->
+                <div class="btn-container">
+                  <button
+                    class="contact-form-btn"
+                    id="submitButton"
+                    type="submit"
+                  >
+                    <span class="contact-form-btn-text">Submit</span>
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- Footer -->
+    <footer class="footer mt-auto py-3 dark-bg background-blue">
+      <!-- developer and declaration info -->
+      <p class="m-0 text-center">
+        Created by
+        <a class="footer-team-link" href="about.html">Allies in Action</a>
+      </p>
+      <p class="m-0 text-center">Code Institute July 2024 Hackathon</p>
+      <!-- social links -->
+      <p class="m-0 text-center">
+        Follow us:
+        <a
+          href="https://facebook.com"
+          target="_blank"
+          rel="noopener"
+          aria-label="Visit our Facebook page (opens in a new tab)"
+          ><i class="fab fa-facebook-square ms-3"></i
+        ></a>
+        <a
+          href="https://twitter.com"
+          target="_blank"
+          rel="noopener"
+          aria-label="Visit our Twitter page (opens in a new tab)"
+          ><i class="fab fa-twitter-square ms-3"></i
+        ></a>
+        <a
+          href="https://instagram.com"
+          target="_blank"
+          rel="noopener"
+          aria-label="Visit our Instagram page (opens in a new tab)"
+          ><i class="fab fa-instagram-square ms-3"></i
+        ></a>
+        <a
+          href="https://youtube.com"
+          target="_blank"
+          rel="noopener"
+          aria-label="Visit our YouTube page (opens in a new tab)"
+          ><i class="fab fa-youtube-square ms-3"></i
+        ></a>
+      </p>
+    </footer>
+    <!-- Bootstrap core JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- SimpleLightbox plugin JS-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.js"></script>
+    <!-- Core theme JS-->
+    <script src="assets/js/contact.js"></script>
+  </body>
+</html>
